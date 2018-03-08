@@ -34,7 +34,7 @@ var canvas;
 		for(var i = 0; i < files.length; i++) {
 			fileReader = new FileReader();
 			fileReader.onload = handler;
-			fileReader.readAsArrayBuffer(new File("[]", "C:\Users\dzapata\Documents\Imágenes ejemplo Némesis\form3.tif"));            // convert selected file
+			fileReader.readAsArrayBuffer(new File("[]", "C:\Users\dzapata\Documents\ImÃ¡genes ejemplo NÃ©mesis\form3.tif"));            // convert selected file
 		}
 	}
   
@@ -65,7 +65,7 @@ var canvas;
 
 function loadPDFAntiguo(){
 	xhr = new XMLHttpRequest();
-		xhr.open('GET', "/form3.tif");
+		xhr.open('GET', "form3.tif");
 		xhr.responseType = 'arraybuffer';
 		xhr.onload = function (e) {
 			var tiff = new Tiff({buffer: xhr.response});
@@ -79,7 +79,7 @@ function loadPDFAntiguo(){
 
 function loadPDFAntiguoIE(){
 	xhr = new XMLHttpRequest();
-		xhr.open('GET', "C:\\Users\\dzapata\\Documents\\Imágenes ejemplo Némesis\\form3.1.tiff");
+		xhr.open('GET', "C:\\Users\\dzapata\\Documents\\ImÃ¡genes ejemplo NÃ©mesis\\form3.1.tiff");
 		xhr.responseType = "blob";
 		xhr.onload = function (e) {
 		var tiff = new Tiff({buffer: xhr.response});
